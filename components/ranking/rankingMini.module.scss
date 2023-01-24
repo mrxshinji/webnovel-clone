@@ -1,0 +1,42 @@
+@use "styles/common" as c;
+
+
+.container {
+    width: 100%;
+    height: 64px;
+    position: relative;
+    @include c.flexCenter(row);
+    justify-content: flex-start;
+    gap: 1vmin;
+    margin: 1vmin 0;
+
+    .imgContainer {
+        height: 64px;
+        width: 48px;
+        position: relative;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    .idxContainer {
+        height: 100%;
+    }
+
+    .textContainer {
+        @include c.flexCenter(column);
+        align-items: flex-start;
+        h5 {
+            text-align: start;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        p {
+            text-align: start;
+        }
+    }
+
+}

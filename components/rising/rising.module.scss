@@ -1,0 +1,21 @@
+@use "styles/common" as c;
+
+
+.container {
+  width: 1080px;
+  position: relative;
+  @include c.flexCenter(row);
+  margin-bottom: 2rem;
+  gap: 1vmin;
+
+  .left {
+    width: 62.5%;
+    position: relative;
+  }
+
+  .right {
+    width: 37.5%;
+    position: relative;
+  }
+
+}

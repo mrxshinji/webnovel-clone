@@ -1,0 +1,7 @@
+@use "styles/common" as c;
+
+.container {
+    width: 1080px;
+    @include c.flexCenter(row);
+    flex-wrap: wrap;
+}

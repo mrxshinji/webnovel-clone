@@ -1,0 +1,51 @@
+@use "styles/common" as c;
+
+.logoPart {
+  width: 33%;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  .logoContainer {
+    width: 100%;
+    position: relative;
+    margin-bottom: 90px;
+
+    h3 {
+      color: #fff;
+      font-weight: 700;
+      font-size: 20px;
+    }
+  }
+
+  .iconContainer {
+    width: 100%;
+    @include c.flexCenter(row);
+    justify-content: flex-start;
+    gap: 1vmin;
+    margin-bottom: 20px;
+
+    svg {
+      &:hover {
+        cursor: pointer;
+
+        path {
+          fill: #000;
+        }
+      }
+    }
+  }
+
+  .copyrightContainer {
+    width: 100%;
+    @include c.flexCenter(row);
+    justify-content: flex-start;
+
+    p {
+      color: hsla(0, 0%, 100%, 0.5);
+      font-size: 14px;
+    }
+  }
+}

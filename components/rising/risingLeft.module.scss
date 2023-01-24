@@ -1,0 +1,118 @@
+@use "styles/common" as c;
+
+.container {
+  margin-top: 1vmin;
+  width: 100%;
+  @include c.flexCenter(column);
+  align-items: flex-start;
+  position: relative;
+  gap: 1vmin;
+
+  .titleWrapper {
+    width: 100%;
+
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+
+  .content {
+    width: 100%;
+    position: relative;
+    @include c.flexCenter(column);
+    padding: 2.5%;
+    background-color: c.$bc_primary_lighter;
+    border-radius: 5px;
+    gap: 1vmin;
+
+    .selection {
+      width: 100%;
+      ul {
+        @include c.flexCenter(row);
+        justify-content: space-evenly;
+        gap: 1%;
+      }
+    }
+
+    .selected {
+      width: 100%;
+      @include c.flexCenter(row);
+      justify-content: flex-start;
+      gap: 1vmin;
+      position: relative;
+
+      .selectedContent {
+        width: 100%;
+        width: 100%;
+        @include c.flexCenter(row);
+        justify-content: flex-start;
+        margin-right: 5vmin;
+
+        .selectedImageContainer {
+          width: 120px;
+          height: 160px;
+          position: relative;
+          border-radius: 5px;
+          overflow: hidden;
+
+          img {
+            border-radius: 5px;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+              scale: 1.1;
+            }
+          }
+        }
+      }
+
+      .selectedTextContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0 5%;
+        height: 160px;
+        gap: .5vmin;
+
+        h3 {
+          font-size: 20px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        p {
+          font-size: 12px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.imgContainer {
+  width: 54px;
+  height: 72px;
+  position: relative;
+  border-radius: 5px;
+  border: none;
+  overflow: hidden;
+
+  img {
+    transition: all 0.2s ease-in-out;
+    border-radius: 5px;
+  }
+
+  &:hover {
+    img {
+      scale: 1.1;
+    }
+  }
+}

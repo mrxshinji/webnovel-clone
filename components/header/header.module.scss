@@ -1,0 +1,115 @@
+@use "styles/common" as c;
+
+.container {
+  width: 100vw;
+  @include c.flexCenter(row);
+  height: 60px;
+  padding: 20px 0;
+  position: relative;
+
+  border-bottom: 1px solid c.$c_border_light;
+}
+
+.navWrapper {
+  width: 1080px;
+  height: 40px;
+  position: relative;
+  @include c.flexCenter(row);
+}
+
+.fl {
+  @include c.flexCenter(row);
+  gap: 3vmin;
+  height: 100%;
+  width: 50%;
+}
+
+.logoContainer {
+  height: 40px;
+  width: 40px;
+  @include c.flexCenter(row);
+}
+
+.navMenu {
+  height: 40px;
+  position: relative;
+  @include c.flexCenter(row);
+
+  ul {
+    @include c.flexCenter(row);
+    gap: 8px;
+
+    li {
+      height: 100%;
+      @include c.flexCenter(row);
+
+      margin-left: 8px;
+      color: c.$c_m;
+      font-weight: 600;
+      font-size: 16px;
+
+      &:hover {
+        color: c.$c_primary;
+        svg {
+          fill: c.$c_primary;
+          color: c.$c_primary;
+        }
+      }
+
+      svg {
+        fill: c.$c_m;
+        margin-right: 4px;
+      }
+    }
+  }
+}
+
+.fr {
+  @extend .fl;
+}
+
+.searchContainer {
+  position: relative;
+  height: 100%;
+  width: 200px;
+  cursor: pointer;
+  border: 1px solid c.$c_border;
+  border-radius: 100px;
+
+  form {
+    @include c.flexCenter(row);
+    gap: 1vmin;
+    height: 40px;
+    padding: 7.5px 16px;
+
+    label {
+      @include c.flexCenter(row);
+      fill: c.$c_xs;
+    }
+
+    input {
+      height: 25px;
+      @include c.flexCenter(row);
+      border: none;
+      width: 80%;
+      color: black;
+      outline: none;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: c.$c_trans_primary_lighter;
+
+    form {
+      label {
+        fill: c.$c_primary;
+      }
+
+      input {
+        background-color: c.$c_trans_primary_lighter;
+        color: c.$c_primary;
+      }
+    }
+  }
+}

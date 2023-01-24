@@ -1,0 +1,55 @@
+[
+    {
+      "name": "All",
+      "link": "/"
+    },
+    {
+      "name": "Urban",
+      "link": "/"
+    },
+    {
+      "name": "Eastern",
+      "link": "/"
+    },
+    {
+      "name": "Games",
+      "link": "/"
+    },
+    {
+      "name": "Fantasy",
+      "link": "/"
+    },
+    {
+      "name": "Sci-fi",
+      "link": "/"
+    },
+    {
+      "name": "Horror",
+      "link": "/"
+    },
+    {
+      "name": "Sports",
+      "link": "/"
+    },
+    {
+      "name": "Action",
+      "link": "/"
+    },
+    {
+      "name": "War",
+      "link": "/"
+    },
+    {
+      "name": "Realistic",
+      "link": "/"
+    },
+    {
+      "name": "History",
+      "link": "/"
+    },
+    {
+      "name": "ACG",
+      "link": "/"
+    }
+  ]
+  

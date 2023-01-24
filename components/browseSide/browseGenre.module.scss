@@ -1,0 +1,8 @@
+@use "styles/common" as c;
+
+.container {
+    width: 100%;
+    @include c.flexCenter(column);
+
+}
+

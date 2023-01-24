@@ -1,0 +1,48 @@
+@use "styles/common" as c;
+
+.container {
+  height: 211px;
+  width: 105px;
+  @include c.flexCenter(column);
+  margin-bottom: 20px;
+
+  .imgContainer {
+    height: 140px;
+    width: 105px;
+    position: relative;
+    margin-bottom: 5px;
+    overflow: hidden;
+
+    img {
+      border-radius: 10px;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover {
+      img {
+        scale: 1.2;
+      }
+    }
+  }
+
+  h4 {
+    color: c.$c_l;
+    font-size: 16px;
+    font-weight: 700;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    align-self: flex-start;
+    font-size: 14px;
+    font-weight: 400;
+    color: c.$c_m;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

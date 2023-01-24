@@ -1,0 +1,34 @@
+@use 'styles/common' as c;
+
+.btn {
+  border: 1px solid transparent;
+  padding: 8px 16px;
+  font-size: 14px;
+  height: 40px;
+  @include c.flexCenter(row);
+  cursor: pointer;
+  &:hover,
+  &:active,
+  &:disabled {
+    filter: brightness(0.5);
+  }
+}
+
+// variants
+.btnPrimary {
+  background-color: c.$c_primary;
+  background-image: c.$bc_gradient_bt_primary;
+  background-color: transparent;
+  color: #fff;
+}
+
+.btnSecondary {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+
+// type
+.btnRounded {
+  border-radius: 100px;
+}

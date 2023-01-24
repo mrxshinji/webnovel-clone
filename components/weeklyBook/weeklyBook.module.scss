@@ -1,0 +1,81 @@
+@use "styles/common" as c;
+
+.h1Font {
+  font-size: 32px;
+  letter-spacing: 0.15px;
+  margin-bottom: 8px;
+  align-self: flex-start;
+}
+
+.sectionContainer {
+  width: 1080px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.halfSection {
+  width: 45%;
+  @include c.flexCenter(column);
+  position: relative;
+}
+
+.sl {
+  @extend .halfSection;
+
+  h1 {
+    @extend .h1Font;
+  }
+}
+
+.itemContainer {
+  width: 470px;
+  height: 288px;
+  position: relative;
+}
+
+.labelContainer {
+  position: absolute;
+  width: 10%;
+  top: 320px;
+  @include c.flexCenter(row);
+  justify-content: space-evenly;
+  z-index: 20;
+
+  button {
+    height: 8px;
+    width: 8px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: #fff;
+    }
+
+    &.active {
+      background-color: #fff;
+    }
+  }
+}
+
+.sr {
+  @extend .halfSection;
+  justify-content: flex-start;
+
+  h1 {
+    @extend .h1Font;
+  }
+}
+
+.articlesContainer {
+  width: 100%;
+  a {
+    @include c.flexCenter(column);
+    width: 100%;
+  }
+}

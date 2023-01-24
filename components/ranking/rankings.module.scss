@@ -1,0 +1,59 @@
+@use "styles/common" as c;
+
+.sectionContainer {
+  width: 1080px;
+  position: relative;
+  @include c.flexCenter(row);
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  .titleWrapper {
+    width: 100%;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid c.$c_border_light;
+    @include c.flexCenter(row);
+    justify-content: space-between;
+
+    h3 {
+      text-align: start;
+      font-size: 32px;
+    }
+
+    a {
+        color: c.$c_primary;
+        font-weight: 600;
+        font-size: 14px;
+    }
+  }
+
+  .rankingsContainer {
+    position: relative;
+    @include c.flexCenter(row);
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    gap: 10vmin;
+
+  }
+
+  .extendContainer {
+    width: 100%;
+    position: relative;
+    @include c.flexCenter(row);
+    margin-top: 1vmin;
+    
+    button {
+      border: none;
+      border-style: none;
+      background-color: transparent;
+      cursor: pointer;
+      color: c.$c_primary;
+      font-size: 14px;
+
+    }
+  }
+}

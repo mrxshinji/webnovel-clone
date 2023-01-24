@@ -1,0 +1,24 @@
+@use "styles/common" as c;
+
+.container {
+  width: 1080px;
+  padding: 1% 2%;
+  position: relative;
+  @include c.flexCenter(row);
+  flex-wrap: wrap;
+
+
+  ul {
+    width: 100%;
+    position: relative;
+    @include c.flexCenter(row);
+    justify-content: space-evenly;
+    gap: 6vmin;
+
+    li {
+        flex: 1;
+    }
+  }
+}
+
+

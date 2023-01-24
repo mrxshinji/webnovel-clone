@@ -1,0 +1,37 @@
+@use "styles/common" as c;
+
+.container {
+  width: 100%;
+  @include c.flexCenter(column);
+  gap: 1vmin;
+
+  .titleWrapper {
+    width: 100%;
+    @include c.flexCenter(row);
+    justify-content: space-between;
+
+    h4 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    button {
+      color: c.$c_primary;
+    }
+  }
+
+  .contentWrapper {
+    width: 100%;
+
+    ul {
+      width: 100%;
+      @include c.flexCenter(row);
+      flex-wrap: wrap;
+      gap: 1vmin;
+
+      li {
+        flex: 1;
+      }
+    }
+  }
+}

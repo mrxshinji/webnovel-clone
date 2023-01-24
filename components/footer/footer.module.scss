@@ -1,0 +1,20 @@
+@use "styles/common" as c;
+
+.container {
+  width: 100vw;
+  height: 408px;
+  @include c.flexCenter(row);
+  background-color: c.$bc_primary_darkest;
+  padding: 5% 0;
+  gap: 1vmin;
+}
+
+.innerContainer {
+  height: 100%;
+  width: 1080px;
+  padding: 0 2%;
+  position: relative;
+  @include c.flexCenter(row);
+  align-items: flex-start;
+  gap: 1vmin;
+}

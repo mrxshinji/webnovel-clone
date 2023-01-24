@@ -1,0 +1,27 @@
+@use "styles/common" as c;
+
+.articleContainer {
+  @include c.flexCenter(row);
+  width: 100%;
+  border-top: 1px solid c.$c_border_light;
+  border-bottom: 1px solid c.$c_border_light;
+  padding: 16px 0;
+  position: relative;
+  justify-content: space-between;
+
+  &:hover {
+    background-color: c.$c_trans_primary_lighter;
+  }
+}
+
+.articleText {
+  h4 {
+    text-align: start;
+  }
+}
+
+.articleImage {
+  position: relative;
+  width: 104px;
+  height: 64px;
+}

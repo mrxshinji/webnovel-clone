@@ -1,0 +1,40 @@
+@use "styles/common" as c;
+
+.container {
+  width: 15%;
+  position: relative;
+  @include c.flexCenter(column);
+
+  .titleWrapper {
+    width: 100%;
+    margin-bottom: 20px;
+
+    h3 {
+      text-align: start;
+      color: #fff;
+    }
+  }
+
+  .linksContainer {
+    width: 100%;
+
+    ul {
+      width: 100%;
+      position: relative;
+      @include c.flexCenter(column);
+      align-items: flex-start;
+      gap: 1vmin;
+
+      li {
+        a {
+          color: hsla(0, 0%, 100%, 0.5);
+          font-size: 14px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

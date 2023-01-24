@@ -1,0 +1,29 @@
+@use "styles/common" as c;
+
+.wideContainer {
+  width: 100vw;
+  background-color: c.$bc_primary_lighter;
+  @include c.flexCenter(column);
+  padding: 2% 0;
+}
+
+.container {
+  width: 1080px;
+  position: relative;
+  @include c.flexCenter(column);
+
+  .titleWrapper {
+    @include c.titleWrapper;
+
+    h3 {
+      margin-left: unset;
+
+    }
+  }
+
+  ul {
+    width: 100%;
+    @include c.flexCenter(row);
+    justify-content: space-evenly;
+  }
+}

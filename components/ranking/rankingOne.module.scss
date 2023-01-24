@@ -1,0 +1,43 @@
+@use "styles/common" as c;
+
+.container {
+  width: 33.3%;
+  position: relative;
+  @include c.flexCenter(column);
+  align-items: flex-start;
+  
+
+  .title {
+    height: 40px;
+    @include c.flexCenter(row);
+    justify-content: flex-start;
+    margin-top: 2vmin;
+    margin-bottom: 2vmin;
+
+    .subtitle {
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        @include c.flexCenter(row);
+        justify-content: flex-start;
+
+      h4 {
+        margin-left: 5%;
+        position: relative;
+        font-size: 20px;
+        font-weight: 700;
+        z-index: 5;
+        color: #fff;
+      }
+
+      .backImg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+      }
+    }
+
+
+  }
+}

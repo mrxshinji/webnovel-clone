@@ -1,0 +1,29 @@
+@use "styles/common" as c;
+
+.container {
+  width: 1080px;
+  @include c.flexCenter(column);
+  padding: 2% 2%;
+
+  .titleWrapper {
+    width: 100%;
+    @include c.titleWrapper;
+    justify-content: space-between;
+
+    h3 {
+      margin-left: 0;
+    }
+  }
+
+  .tagContainer {
+    width: 100%;
+
+    ul {
+      width: 100%;
+      @include c.flexCenter(row);
+      justify-content: flex-start;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@use "./colors" as c;
+
+@mixin flexCenter($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin titleWrapper {
+  width: 100%;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid c.$c_border_light;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+
+  h3 {
+    text-align: start;
+    font-size: 24px;
+    margin-left: 2.5%;
+  }
+
+  a {
+    color: c.$c_primary;
+    font-weight: 600;
+    font-size: 14px;
+  }
+}
